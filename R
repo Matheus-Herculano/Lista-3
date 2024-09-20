@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<math.h>
+void main ()
+{
+  int x=0,i=1,maior=0, menor=0;
+  printf("Digite um valor: ");
+  scanf("%d", &x);
+  maior=x;
+  menor=x;
+  while (x>=0)
+  {
+   printf("Digite um valor: ");
+   scanf("%d",&x);
+   if (x>maior)
+   {
+    maior=x;
+   }
+   if (x<menor && x>(-1))
+   {
+    menor=x;
+   }
+  }
+  printf("Maior dos números: %d\nMenor dos numeros: %d", maior, menor );
+}
+
